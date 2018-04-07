@@ -12,7 +12,7 @@
    {
      id: 3,
      title: 'Написать приложение',
-     completed: false
+     completed: true
    },
    {
      id: 4,
