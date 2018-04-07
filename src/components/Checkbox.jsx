@@ -1,34 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-class Checkbox extends React.Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
-      completed: this.props.initiallyChecked
-    };
-    
-    this.handleClick = this.handleClick.bind(this);
-  }
-  
-  handleClick(event) {
-    this.setState({
-      completed: !this.state.completed
-    });
-  }
-  
-  render() {
+function Checkbox(props) {
+
     return(
-      <button className="checkbox icon" onClick={this.handleClick}>
-        <i className="material-icons">{this.state.completed ? 'check_box' : 'check_box_outline_blank'}</i>
+      <button className="checkbox icon" onClick={props.onChange}>
+        <i className="material-icons">{props.completed ? 'check_box' : 'check_box_outline_blank'}</i>
       </button>
     );
   }
-}
 
 Checkbox.propTypes = {
-  initiallyChecked: PropTypes.bool.isRequired
+  completed: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired
 };
  
  export default Checkbox;
