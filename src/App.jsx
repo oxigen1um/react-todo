@@ -5,7 +5,6 @@
   import Todo from './components/Todo';
   
   function App(props) {
-    console.log(props);
     return (
       <main>
         

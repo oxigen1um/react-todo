@@ -10,7 +10,7 @@ function Checkbox(props) {
 }
 
 Checkbox.propTypes = {
-  completed: PropTypes.bool.inRequired
+  completed: PropTypes.bool.isRequired
 };
  
  export default Checkbox;

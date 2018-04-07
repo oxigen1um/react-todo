@@ -18,7 +18,7 @@ function Todo(props) {
 
 Todo.propTypes = {
   title: PropTypes.string.isRequired,
-  completed: PropTypes.bool.inRequired
+  completed: PropTypes.bool.isRequired
 };
 
 export default Todo;
