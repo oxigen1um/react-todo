@@ -12,15 +12,22 @@
         <Header title={props.title}/>
       
         <section className="todo-list">
-          <Todo title={"Изучить JS"} completed={true} />
-          <Todo title={"Изучить React"} completed={false} />
+          {props.todos.map(todo => 
+            <Todo key={todo.id} title={todo.title} completed={todo.completed} />)
+          }
+          
         </section>
       </main>
     );
   }
   
   App.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
+    todos: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      completed: PropTypes.bool.isRequired
+    })).isRequired
   };
   
   App.defaultProps = {
