@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Stats(props) {
-  let total = props.todos.lenght;
+  let total = props.todos.length;
   let completed = props.todos.filter(todo => todo.completed).length;
   let pending = total - completed;
-  console.log(total);
   return(
     <table className="stats">
       <tbody>
@@ -15,11 +14,11 @@ function Stats(props) {
         </tr>
         <tr>
           <th>Done:</th>
-        <td>1</td>
+        <td>{completed}</td>
         </tr>
         <tr>
           <th>Pendig:</th>
-        <td>2</td>
+        <td>{pending}</td>
         </tr>
       </tbody>
     </table>
