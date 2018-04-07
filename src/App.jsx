@@ -25,7 +25,7 @@ class App extends React.Component {
       return todo;
     });
     
-    this.setState({ todos:todos });
+    this.setState({ todos: todos });
   }
   
   handleDelete(id) {
@@ -38,7 +38,7 @@ class App extends React.Component {
       return (
         <main>
           
-          <Header title={this.props.title}/>
+          <Header title={this.props.title} todos={this.state.todos} />
         
           <section className="todo-list">
             {this.state.todos.map(todo => 
