@@ -13,11 +13,6 @@
      id: 3,
      title: 'Написать приложение',
      completed: true
-   },
-   {
-     id: 4,
-     title: 'Отдохнуть',
-     completed: false
    }
  ];
  
