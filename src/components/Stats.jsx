@@ -9,15 +9,15 @@ function Stats(props) {
     <table className="stats">
       <tbody>
         <tr>
-          <th>Tasks quantity:</th>
+          <th>Количество задач:</th>
         <td>{total}</td>
         </tr>
         <tr>
-          <th>Done:</th>
+          <th>Выполнено:</th>
         <td>{completed}</td>
         </tr>
         <tr>
-          <th>Pendig:</th>
+          <th>Не выполнено:</th>
         <td>{pending}</td>
         </tr>
       </tbody>
