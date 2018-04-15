@@ -75,6 +75,8 @@ class App extends React.Component {
           <ReactCSSTransitionGroup components="section" 
                                    className="todo-list"
                                    transitionName="slide"
+                                   transitionAppear={true}
+                                   transitionAppearTimeout={500}
                                    transitionEnter={true}
                                    transitionLeave={true}
                                    transitionEnterTimeout={500}

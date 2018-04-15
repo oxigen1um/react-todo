@@ -41,7 +41,7 @@ class Stopwatch extends React.Component {
     let totalSeconds = Math.floor(milliseconds / 1000);
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = totalSeconds % 60;
-    return `${minutes > 9 ? minutes : '0' + minutes}:${seconds > 9 ? seconds: '0' + seconds}`
+    return `${minutes > 9 ? minutes : '0' + minutes}:${seconds > 9 ? seconds: '0' + seconds}`;
   }
   
   componentDidMount() {
