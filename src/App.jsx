@@ -21,9 +21,11 @@ class App extends React.Component {
     this.handleEdit = this.handleEdit.bind(this);
   }
   
-  nextId() {
-    this._nextId = this._nextId || 4;
-    return this._nextId++;
+  componentDidMount() {
+      fetch('http://localhost:3000/api/todos')
+        .then(response => response.json())
+        .then(todos => this.setState( { todos } ))
+        .catch(error => console.error(error.message));
   }
   
   handleStatusChange(id) {
