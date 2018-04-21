@@ -6,6 +6,7 @@
   import Header from './components/Header';
   import Todo from './components/Todo';
   import Form from './components/Form';
+  import Preloader from './components/Preloader';
   
   
 class App extends React.Component {
@@ -89,10 +90,11 @@ class App extends React.Component {
   render() {
       return (
         <main>
-          
+          <Preloader />
+  
           <Header title={this.props.title} todos={this.state.todos} />
         
-          <ReactCSSTransitionGroup components="section" 
+        <ReactCSSTransitionGroup components="section" 
                                    className="todo-list"
                                    transitionName="slide"
                                    transitionAppear={true}
@@ -100,7 +102,7 @@ class App extends React.Component {
                                    transitionEnter={true}
                                    transitionLeave={true}
                                    transitionEnterTimeout={500}
-                                   transitionLeaveTimeout={500}>
+                                   transitionLeaveTimeout={500}> 
             {this.state.todos.map(todo => 
               <Todo 
                 key={todo.id}
