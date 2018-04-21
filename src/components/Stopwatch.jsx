@@ -9,7 +9,7 @@ class Stopwatch extends React.Component {
     this.state = {
       running: true,
       elapsed: 0,
-      lastTick: 0
+      lastTick: Date.now()
     };
     
     this.handleStop = this.handleStop.bind(this);
