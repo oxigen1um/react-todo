@@ -15,7 +15,7 @@ class Preloader extends React.Component {
   
   renderPreloader() {
     return (
-      <div class="bouncing-loader">
+      <div className="bouncing-loader">
         <div></div>
         <div></div>
         <div></div>
