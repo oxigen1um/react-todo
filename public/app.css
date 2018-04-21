@@ -280,3 +280,14 @@ header h1 {
 .bouncing-loader > div:nth-child(3) {
   animation-delay: 0.4s;
 }
+/* mobile adaptation */
+/*
+@media (max-width: 768px) {
+  .bouncing-loader {
+    height: 100vh;
+  }
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  } 
+} */

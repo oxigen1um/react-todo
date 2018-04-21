@@ -1,17 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Изучить JavaScript",
+        "title": "Задеплоить приложение",
         "completed": true
     },
     {
         "id": 2,
-        "title": "Изучить React",
-        "completed": false
-    },
-    {
-        "id": 3,
-        "title": "Написать приложение!!!",
+        "title": "Начать пользоваться приложением",
         "completed": false
     }
 ]
